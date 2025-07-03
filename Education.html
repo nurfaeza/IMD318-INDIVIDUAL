@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Education - My Life Journey</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: #ffe6f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #f48fb1;
+      padding: 10px;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: inline-block;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #ffb6c1;
+      border-radius: 5px;
+      transform: scale(1.1);
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .edu-box {
+      background-color: #ffcce6;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      animation: fadeInUp 1.2s ease-in-out;
+    }
+
+    h2, h3 {
+      color: #d63384;
+    }
+
+    img.school-logo {
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      max-width: 250px;
+      transition: transform 0.4s ease;
+      animation: fadeIn 2s ease;
+    }
+
+    img.school-logo:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease;
+      animation: fadeIn 2s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      background-color: #f48fb1;
+      color: white;
+      padding: 10px;
+      margin-top: 40px;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+    <script>
+    // Simple welcome alert
+    window.onload = function() {
+      alert("Welcome to Education Page");
+    };
+  </script>
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="Biodata.html">Biodata</a>
+  <a href="Experience.html">Experience</a>
+  <a href="Education.html">Education</a>
+  <a href="Family.html">Family</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="Other.html">Other</a>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+  <h2>My Education Background</h2>
+
+  <div class="edu-box">
+    <img src="photo\uitm.jpg" alt="UiTM" class="school-logo">
+    <h3>Universiti Teknologi MARA (UiTM)</h3>
+    <p><strong>Diploma in Information Management</strong><br>2023 - 2025</p>
+    <p>Focused on records management, ICT systems, and digital archiving.</p>
+  </div>
+
+  <div class="edu-box">
+    <img src="photo\logo sua.jpg" alt="SMK Ungku Aziz" class="school-logo">
+    <h3>SMK Ungku Aziz</h3>
+    <p><strong>Science Technical Stream</strong><br>SPM - 2021</p>
+    <p>Subjects: BM, BI, Mathematics, Add Maths, Physics, Chemistry, GKT, Visual Art</p>
+    <p>Active in co-curricular activities and leadership roles.</p>
+  </div>
+
+  <div class="edu-box">
+    <img src="photo\sk.jpg" alt="SK Doktor Abdul Latiff" class="school-logo">
+    <h3>SK Doktor Abdul Latiff</h3>
+    <p><strong>Primary School</strong><br>UPSR - 2016</p>
+    <p>Held leadership roles and actively joined school and uniformed unit activities.</p>
+  </div>
+
+  <h2>Education Photo</h2>
+  <div class="gallery">
+   <img src="photo\gambar sekolah 1.jpeg" alt="My Education Photo" width="200" height="300">
+   <img src="photo\gambar sekolah 2.jpeg" alt="My Education Photo" width="200" height="300">
+   <img src="photo\gambar sekolah 3.jpeg" alt="My Education Photo" width="200" height="300">
+   <img src="photo\gambar sekolah 4.jpeg" alt="My Education Photo" width="200" height="300">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  © 2025 by Faeza 💕
+</footer>
+
+</body>
+</html>

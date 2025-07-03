@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gallery - My Life Journey</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: #ffe6f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #f48fb1;
+      padding: 10px;
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: inline-block;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #ffb6c1;
+      border-radius: 5px;
+      transform: scale(1.1);
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    h2, h3 {
+      color: #d63384;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: zoomIn 0.8s ease-in-out;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    ul {
+      list-style-type: square;
+      max-width: 600px;
+      margin: 20px auto;
+      padding-left: 40px;
+      color: #d63384;
+      font-size: 16px;
+    }
+
+    video, audio {
+      display: block;
+      margin: 20px auto;
+      border: 3px solid #f48fb1;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #f48fb1;
+      color: white;
+      padding: 10px;
+      margin-top: 40px;
+      animation: fadeIn 1s ease;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+
+  <script>
+    window.onload = function() {
+      alert("Welcome to My Gallery Page! 📸");
+    };
+  </script>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="Biodata.html">Biodata</a>
+  <a href="Experience.html">Experience</a>
+  <a href="Education.html">Education</a>
+  <a href="Family.html">Family</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="Other.html">Other</a>
+</div>
+
+<div class="container">
+  <h2><i>Gallery of Memories</i></h2>
+  <p><b>Welcome to my photo collection from internship, family & special events!</b></p>
+
+  <div class="gallery">
+    <img src="photo\Faeza.jpeg" alt="Gallery Photo 1" width="200" height="300">
+    <img src="photo\family.jpeg" alt="Gallery Photo 2" width="200" height="300">
+    <img src="photo\intern 1.jpeg" alt="Gallery Photo 3" width="200" height="300">
+    <img src="photo\technical.jpg" alt="Gallery Photo 4" width="200" height="300">
+    <img src="photo\gambar program kembara integriti.jpg" alt="Gallery Photo 5" width="200" height="300">
+    <img src="photo\intern 3.jpg" alt="Gallery Photo 6" width="200" height="300">
+    <img src="photo\intern 4.jpg" alt="Gallery Photo 7" width="200" height="300">
+    <img src="photo\intern 5.jpg" alt="Gallery Photo 8" width="200" height="300">
+    <img src="photo\intern 6.jpg" alt="Gallery Photo 8" width="200" height="300">
+  </div>
+
+  <h3>📝 Favorite Moments Captured</h3>
+  <ul>
+    <li>First day at internship</li>
+    <li>Family gathering during Hari Raya</li>
+    <li>Iftar with JKR team</li>
+    <li>Program Kembara Integriti at Dewan Sri Bernam</li>
+  </ul>
+
+  <h3>🎬 Internship Vlog</h3>
+  <video width="320" height="240" controls>
+    <source src="photo\vlog 1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <h3>🎵 Background Music</h3>
+  <audio controls>
+    <source src="photo\ST12 - Saat Terakhir (Lirik).mp4" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<footer>
+  © 2025 by Faeza 💕
+</footer>
+
+</body>
+</html>

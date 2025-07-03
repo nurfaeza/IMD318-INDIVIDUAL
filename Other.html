@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Other - My Life Journey</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: #ffe6f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #f48fb1;
+      padding: 10px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: inline-block;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #ffb6c1;
+      border-radius: 5px;
+      transform: scale(1.1);
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .card {
+      background-color: #ffcce6;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: slideIn 1s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    h2, h3 {
+      color: #d63384;
+      text-align: center;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #f48fb1;
+      color: white;
+      padding: 10px;
+      margin-top: 40px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    img {
+      display: block;
+      margin: 10px auto;
+      width: 200px;
+      border-radius: 10px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      alert("Welcome to the 'Other Highlights' page! 🌟");
+    };
+  </script>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="Biodata.html">Biodata</a>
+  <a href="Experience.html">Experience</a>
+  <a href="Education.html">Education</a>
+  <a href="Family.html">Family</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="Other.html">Other</a>
+</div>
+
+<div class="container">
+  <h2>Other Highlights</h2>
+
+  <div class="card">
+    <h2>Profile Snapshot</h2>
+    <img src="photo\Faeza.jpeg" alt="Faeza's photo">
+    <p><strong>“Be the energy you want to attract.”</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>Skills</h2>
+    <ul>
+      <li>Microsoft Office (Word, PowerPoint, Excel)</li>
+      <li>HTML & CSS Basic</li>
+      <li>Networking & Troubleshooting</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Drawing</li>
+      <li>Listening to music</li>
+      <li>Editing pictures/videos</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Completed 8-week industrial training at JKR Sabak Bernam</li>
+      <li>Participated in volleyball game at UiTM</li>
+      <li>Created a personal website using HTML & MYSQL</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Awards</h2>
+    <ul>
+      <li>Best Team Player – SUKOL (UiTM) 2023</li>
+      <li>Certificate of Leadership – Asrama SMK Ungku Aziz</li>
+      <li>Certificate in Exam – Form 1</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Favourite Quote</h2>
+    <p><em>"Stars can't shine without darkness."</em></p>
+    <p><em>"Be the energy you want to attract."</em></p>
+  </div>
+
+  <div class="card">
+    <h2>Fun Fact</h2>
+    <p>I enjoy learning new tech tools and customizing things to look cute and fun!</p>
+  </div>
+
+  <div class="card">
+    <h2>My Favourite Song</h2>
+    <audio controls>
+      <source src="photo\Jessie_J_Flashlight_from_Pitch_Perfect_2_Official_Video.mp4" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
+
+<footer>
+  © 2025 by Faeza 💕
+</footer>
+
+</body>
+</html>

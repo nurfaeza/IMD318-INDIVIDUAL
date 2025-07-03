@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    font-family: Verdana, sans-serif;
+    background-color: #ffe6f0;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 2s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: #f48fb1;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  .navbar a:hover {
+    background-color: #ffb6c1;
+    border-radius: 5px;
+  }
+
+  .container {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .card {
+    background-color: #ffcce6;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    animation: slideUp 1s ease;
+  }
+
+  @keyframes slideUp {
+    from {transform: translateY(20px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+  }
+
+  h2 {
+    color: #d63384;
+  }
+
+  video {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  footer {
+    text-align: center;
+    background-color: #f48fb1;
+    color: white;
+    padding: 10px;
+    margin-top: 40px;
+  }
+
+  ul.custom li::before {
+    content: "🌼 ";
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  table, th, td {
+    border: 2px solid #d63384;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff0f5;
+  }
+
+  th {
+    background-color: #f48fb1;
+    color: white;
+  }
+
+  img.thumb {
+    width: 100px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+    <center><h2><u>My Life Journey</u></h2></center>
+    <p><b>Life is not just about ourselves.It is about people who come to our life.</b></p>
+    <p>Not everyone who come to us we can call them family.Some people come to our life just to hurt us.</p>
+    <p><abbr title="Family short name">JFZ</abbr> is my family name which my father's name, my siblings, and my mother's name.</p>
+  </div>
+
+  <!-- Background music -->
+  <audio autoplay loop>
+    <source src="background.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="Biodata.html">Biodata</a>
+    <a href="Experience.html">Experience</a>
+    <a href="Education.html">Education</a>
+    <a href="Family.html">Family</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="Other.html">Other</a>
+    <a href="#table-section">Table</a>
+    <a href="https://www.google.com" target="_blank">Google</a>
+  </div>
+
+  <div class="card">
+    <h2>Current Time & Date</h2>
+    <p id="clock" style="font-size: 24px; font-weight: bold;"></p>
+    <p id="date" style="font-size: 18px;"></p>
+  </div>
+
+  <div class="card">
+    <h2>Hello Sunshine</h2>
+    <p>This is my interface that I have made just for you.</p>
+  </div>
+
+  <div class="card">
+    <h2>Features</h2>
+    <ul class="custom">
+      <li>Soft pastel colors</li>
+      <li>Rounded corners</li>
+      <li>Responsive design</li>
+      <li>Fun animations</li>
+      <li>Background music</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Steps to Use</h2>
+    <ol>
+      <li>Open the homepage</li>
+      <li>Navigate through sections</li>
+      <li>Watch the video</li>
+      <li>Enjoy the music</li>
+    </ol>
+  </div>
+
+  <!-- Table Section -->
+  <div class="card" id="table-section">
+    <h2>Favorite Things Table</h2>
+    <table>
+      <tr>
+        <th>Category</th>
+        <th>Item</th>
+        <th>Emoji</th>
+      </tr>
+      <tr>
+        <td>Food</td>
+        <td>Ice Cream</td>
+        <td>🍦</td>
+      </tr>
+      <tr>
+        <td>Color</td>
+        <td>Pink</td>
+        <td>🎀</td>
+      </tr>
+      <tr>
+        <td>Season</td>
+        <td>Spring</td>
+        <td>🌸</td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+<footer>
+  <p>Made with 💗 by Faeza</p>
+</footer>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+    const timeString = now.toLocaleTimeString();
+    const dateString = now.toDateString();
+    document.getElementById('clock').innerText = timeString;
+    document.getElementById('date').innerText = dateString;
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock();
+</script>
+
+</body>
+</html>

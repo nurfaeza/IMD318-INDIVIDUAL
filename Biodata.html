@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Biodata - My Life Journey</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: #ffe6f0;
+      margin: 0;
+      padding: 0;
+      animation: fadeInBody 2s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #f48fb1;
+      padding: 10px;
+      text-align: center;
+      animation: slideDown 1s ease;
+    }
+
+    @keyframes slideDown {
+      from {transform: translateY(-50px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: inline-block;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #ffb6c1;
+      border-radius: 5px;
+      transform: scale(1.05);
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .biodata-box {
+      background-color: #ffcce6;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      animation: popIn 1.2s ease;
+    }
+
+    @keyframes popIn {
+      from {transform: scale(0.9); opacity: 0;}
+      to {transform: scale(1); opacity: 1;}
+    }
+
+    h2 {
+      color: #d63384;
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      max-width: 250px;
+      animation: fadeInImg 2s ease;
+    }
+
+    @keyframes fadeInImg {
+      from {opacity: 0; transform: rotate(-5deg);}
+      to {opacity: 1; transform: rotate(0);}
+    }
+
+    .biodata-box p:hover {
+      animation: bounce 0.6s;
+      cursor: pointer;
+    }
+
+    @keyframes bounce {
+      0% { transform: translateY(0); }
+      30% { transform: translateY(-10px); }
+      60% { transform: translateY(5px); }
+      100% { transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      background-color: #f48fb1;
+      color: white;
+      padding: 10px;
+      margin-top: 40px;
+      animation: fadeInFooter 2s ease;
+    }
+
+    @keyframes fadeInFooter {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+
+  <script>
+    window.onload = function() {
+      alert("Welcome to my Biodata page! 💕");
+    };
+  </script>
+</head>
+<body>
+
+  <!-- ✅ Background music (replace path with your own project folder) -->
+  <audio autoplay loop>
+    <source src="Little Mix - Black Magic (Lyrics).mp4" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- ✅ Navigation Bar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="Biodata.html">Biodata</a>
+    <a href="Experience.html">Experience</a>
+    <a href="Education.html">Education</a>
+    <a href="Family.html">Family</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="Other.html">Other</a>
+  </div>
+
+  <!-- ✅ Content -->
+  <div class="container">
+    <h2>My Biodata</h2>
+    <div class="biodata-box">
+      <img src="photo\Faeza.jpeg" alt="Faeza's Photo">
+      <ul>
+        <li><strong>Full Name:</strong> Nur Faeza binti Jamari</li>
+        <li><strong>Date of Birth:</strong> 02 November 2004</li>
+        <li><strong>Address:</strong> Lot 2278 Jalan Tanjung Ketum, Batu 4 Sepintas, 45200 Sabak Bernam, Selangor</li>
+        <li><strong>Phone:</strong> 013-5253945</li>
+        <li><strong>Email:</strong> nurfaezajamari@gmail.com</li>
+        <li><strong>University:</strong> Universiti Teknologi Mara (UiTM)</li>
+        <li><strong>Programme:</strong> Diploma in Information Management</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 by Faeza 💕
+  </footer>
+
+</body>
+</html>

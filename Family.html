@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Family - My Life Journey</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: #ffe6f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #f48fb1;
+      padding: 10px;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: inline-block;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #ffb6c1;
+      border-radius: 5px;
+      transform: scale(1.1);
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .family-photo {
+      display: block;
+      margin: 0 auto 20px auto;
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      animation: zoomIn 1.5s ease;
+      transition: transform 0.4s ease;
+    }
+
+    .family-photo:hover {
+      transform: scale(1.05);
+    }
+
+    .family-card {
+      background-color: #ffcce6;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      animation: fadeInUp 1s ease forwards;
+      transition: transform 0.3s ease;
+    }
+
+    .family-card:hover {
+      transform: translateY(-5px);
+    }
+
+    h2, h3 {
+      color: #d63384;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .family-card img {
+      display: block;
+      margin: 15px auto;
+      border-radius: 12px;
+      max-width: 300px;
+      height: auto;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease;
+      animation: zoomIn 1.3s ease;
+    }
+
+    .family-card img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      background-color: #f48fb1;
+      color: white;
+      padding: 10px;
+      margin-top: 40px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+    }
+
+    th, td {
+      border: 1px solid #d63384;
+      padding: 10px;
+      text-align: center;
+      background-color: #ffeaf3;
+    }
+
+    th {
+      background-color: #f8c7da;
+      color: #800040;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+
+  <script>
+    // Simple welcome alert
+    window.onload = function() {
+      alert("Welcome to My Family Page 💖");
+    };
+  </script>
+</head>
+
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="Biodata.html">Biodata</a>
+  <a href="Experience.html">Experience</a>
+  <a href="Education.html">Education</a>
+  <a href="Family.html">Family</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="Other.html">Other</a>
+</div>
+
+<div class="container">
+  <h3>My Family Photo</h3>
+  <img src="photo\family.jpeg" alt="Family Photo" width="300" height="400" class="family-photo">
+
+  <div class="family-card">
+    <h3>My Parents</h3>
+    <img src="photo\parents.jpeg" alt="parent" width="300" height="400">
+    <div class="family-info">
+      <p>They are the pillar of strength in our family. Supportive, hardworking, and full of wisdom.</p>
+    </div>
+  </div>
+
+  <div class="family-card">
+    <h3>My Brother</h3>
+    <img src="photo\abang.jpeg" alt="brother" width="300" height="400">
+    <div class="family-info">
+      <p>The feeling of being protective and making us feel safe wherever we go.</p>
+    </div>
+  </div>
+
+  <div class="family-card">
+    <h3>My Sisters</h3>
+    <img src="photo\kakak 1.jpeg" alt="kakak1" width="300" height="400">
+    <img src="photo\kakak 2.jpeg" alt="kakak2" width="300" height="400">
+    <div class="family-info">
+      <p>Caring, loving, and always there for us with a warm smile.</p>
+    </div>
+  </div>
+
+  <div class="family-card">
+    <h3>My Younger Sister</h3>
+    <img src="photo\adik.jpeg" alt="adik" width="300" height="400">
+    <div class="family-info">
+      <p>Fun, energetic, and always ready to cheer me up. My partner in crime!</p>
+    </div>
+  </div>
+
+  <h3>💡 Things I Love Doing With My Family (List)</h3>
+  <ul>
+    <li>Having dinner together every weekend</li>
+    <li>Going on family road trips</li>
+    <li>Watching movies on Friday nights</li>
+    <li>Celebrating birthdays and special moments</li>
+  </ul>
+
+  <h3>👨‍👩‍👧‍👦 Family Info (Table)</h3>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Relationship</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jamari</td>
+      <td>Father</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td>Zainon</td>
+      <td>Mother</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td>Fikri</td>
+      <td>Brother</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>Fatiha</td>
+      <td>Sister</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Farahanis</td>
+      <td>Sister</td>
+      <td>29</td>
+    </tr>
+      <tr>
+      <td>Fariz</td>
+      <td>My Late Brother</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Faeza</td>
+      <td>Sister</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>Fazlin</td>
+      <td>Younger Sister</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Fazira</td>
+      <td>Younger Sister</td>
+      <td>16</td>
+    </tr>
+  </table>
+
+  <h3>🎬 Family Video Memory (Multimedia)</h3>
+  <video width="320" height="240" controls>
+    <source src="photo\video family (2).mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <h3>🎵 Family Song (Audio)</h3>
+  <audio controls>
+    <source src="photo\NOAH - Separuh Aku (Lirik).mp4" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<footer>
+  © 2025 by Faeza 💕
+</footer>
+
+</body>
+</html>
